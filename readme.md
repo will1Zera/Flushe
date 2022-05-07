@@ -4,13 +4,14 @@
   <a href="#sobre-">Sobre</a>
 </p>
 <p align="center"> 
-Flushe é uma plataforma de login e cadastro utilizando email/senha, google e facebook
+  Flushe é uma plataforma de login e cadastro utilizando email/senha, google e facebook
 </p>
 <p align="center">
-<img src="/assets/animation.gif" align="center" style="border-radius: 10px" />
+  <img src="/assets/animation.gif" align="center" style="border-radius: 10px" />
 </p>
 <p align="center">
-[Link para o servidor hospedado!](https://flushee.web.app)
+  by [William Bierhals](https://github.com/will1Zera)
+  Link para o [servidor hospedado](https://flushee.web.app/)
 </p>
 
 ## Tecnologias 👨‍💻 
