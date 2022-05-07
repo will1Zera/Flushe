@@ -10,7 +10,7 @@ Flushe é uma plataforma de login e cadastro utilizando email/senha, google e fa
 <img src="/assets/animation.gif" align="center" style="border-radius: 10px" />
 </p>
 <p align="center">
-[Link para o servidor hospedado!](https://flushee.web.app/)
+[Link para o servidor hospedado!](https://flushee.web.app)
 </p>
 
 ## Tecnologias 👨‍💻 
