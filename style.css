@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&family=Poppins:wght@500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input{
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.password{
+    padding-right: 33px;
+}
+
+#content{
+    padding-top: 30px;
+}
+
+#text{
+    padding: 0;
+    margin: 0;
+    left: 51%;
+    position: relative;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+input{
+    width: 300px;
+    height: 35px;
+    background-color: #240d30;
+    border-image-source: linear-gradient(rgb(77, 76, 233), rgb(186, 38, 252));
+    border-width: 1.5pt;
+    border-image-slice: 1;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.input-field:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+span{
+    color: rgb(186, 38, 252);
+    cursor: pointer;
+    transition: .7s;
+}
+
+span:hover{
+    color: #F001CD;
+}
+
+#e{
+    cursor: default;
+}
+
+.btn{
+    width: 125px;
+    height: 40px;
+    padding-right: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .7s;
+    font-size: 18px;
+}
+
+.btn:hover{
+    background: #F001CD;
+}
+
+.social-icon{
+    margin: 10px 0px 20px 0  ;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.input-field{
+    position: relative;
+}
+
+.eye{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 43%;
+    right: 10px;
+    cursor: pointer;   
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #240d30;
+}
+
+/* Design da wave roxa */
+.container:before{
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, rgb(162, 122, 241), rgb(106, 88, 198));
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+    z-index: 6;
+    transition: 1.8s ease-in-out;
+}
+
+.forms-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.signin-signup{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    transition: 1s 0.7s ease-in-out;
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 5;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 5rem;
+    overflow: hidden;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    transition: 0.2s 0.7s ease-in-out;
+}
+
+form.sign-in-form{
+    z-index: 2;
+}
+
+form.sign-up-form{
+    z-index: 1;
+    opacity: 0;
+}
+
+.title, .title1, .title2{
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+p, label{
+    font-size: 15px;
+}
+
+.social-icon{
+    width: 42px;
+}
+
+.right-panel .content{
+    transform: translateX(800px);
+}
+
+.panel{
+    z-index: 7;
+}
+
+.left-panel{
+    pointer-events: all;
+}
+
+.right-panel{
+    pointer-events: none;
+}
+
+.panel .content{
+    transition: transform 0.9s ease-in-out;
+    transition-delay: 0.6s;
+}
+
+
+/* Animação da wave roxa */
+
+.container.sign-up-mode:before{
+    transform: translate(100%, -50%);
+    right: 52%;
+}
+
+.container.sign-up-mode .left-panel .content{
+    transform: translateX(-800px);
+}
+
+.container.sign-up-mode .right-panel,
+.container.sign-up-mode .right-panel{
+    transform: translateX(0%);
+}
+
+.container.sign-up-mode .signin-signup{
+    left: 25%;
+    transition: 1.2s ease-in-out;
+}
+
+.container.sign-up-mode form.sign-in-form{
+    z-index: 1;
+    opacity: 0;
+}
+
+.container.sign-up-mode form.sign-up-form{
+    z-index: 2;
+    opacity: 1;
+}
+
+.container.sign-up-mode .left-panel {
+    pointer-events: none;
+}
+
+.container.sign-up-mode .right-panel {
+    pointer-events: all;
+}
+
+
+@media (max-width: 870px){
+    .container{
+        min-height: 800px;
+        height: 100vh;
+    }
+
+    .container:before{
+        width: 1500px;
+        height: 1500px;
+        left: 30%;
+        bottom: 70%;
+        transform: translateX(-50%);
+        right: initial;
+        top: initial;
+        transition: 2s ease-in-out;
+    }
+
+    .container.container.sign-up-mode:before{
+        transform: translate(-50%, 100%);
+        bottom: 32%;
+        right: initial;
+    }
+
+    .container.sign-up-mode .signin-signup{
+        top: 5%;
+        transform: translate(-50%, 0);
+        left: 50%;
+    }
+
+    .signin-signup{
+        width: 100%;
+        left: 50%;
+        top: 95%;
+        transform: translate(-50%, -100%);
+    }
+}
+
+@media (max-width: 570px){
+
+    form{
+        padding: 0 1.5rem;
+    }
+
+    .container:before{
+        bottom: 72%;
+        left: 50%;
+    }
+
+    .container.sign-up-mode:before{
+        bottom: 28%;
+        left: 50%;
+    }
+
+    .container.sign-up-mode .signin-signup{
+        top: 0%;
+        left: 50%;
+    }
+}

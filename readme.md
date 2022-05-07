@@ -1,0 +1,1 @@
+Projeto criado para treinar meus conhecimentos de javascript.

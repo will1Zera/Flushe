@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="./assets/diamond.png" />
+    <title>Entrar | Flushe</title>
+    <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+     <div class="container">
+         <div class="forms-container">
+             <div class="signin-signup">
+                <!-- Sessão de login  -->
+                <form action="" class="sign-in-form">
+                    <h1 class="title"><img src="./assets/diamond.png" alt="logo"></img> Flush<span id="e">e</span></h1>
+                    <div class="input-field">
+                        <label for="email">Email</label><br>
+                        <input id="emailLogin" type="text"/>  
+                    </div>
+                    <div class="input-field">
+                        <label for="senha">Senha</label><br>
+                        <input id="senhaLogin" type="password"/>
+                        <p id="text">Esqueceu a senha?</p>
+                    </div>
+                    <input type="submit" value="Login" class="btn solid">
+
+                    <p class="social-text">ou</p>
+                    <div class="social-media">
+                        <img src="./assets/google.png" id="google-login" alt="logo google" class="social-icon"></img>
+                        <img src="./assets/facebook.png" id="facebook-login" alt="logo facebook" class="social-icon"></img>
+                    </div>
+                    <div class="panels-container">
+                        <div class="panel left-panel">
+                            <div class="content">
+                                <p>Não é um membro? <span id="sign-up-btn">Cadastre-se</span></p>
+                            </div>
+                        </div>
+                    </div>
+            
+                </form>
+                <!-- Sessão de cadastro -->
+                <form action="" class="sign-up-form">
+                    <h2 class="title1">Cadastro</h2>
+                    <div class="input-field">
+                        <label for="email">Email</label><br>
+                        <input id="emailCadastro" type="text"/>  
+                    </div>
+                    <div class="input-field">
+                        <label for="senha">Senha</label><br>
+                        <input id="senhaCadastro" class="password" type="password"/>
+                        <img src="./assets/mostrar.png" class="eye" alt="olho">
+                    </div>
+                    <input type="submit" value="Criar conta" class="btn solid">
+                    <div class="panels-container">
+                        <div class="panel rigth-panel">
+                            <div id="content" class="content">
+                                <p>Já é um membro? <span id="sign-in-btn">Entrar</span></p> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                </form>
+             </div>
+         </div>
+
+         <div class="panels-container" ></div>
+
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
