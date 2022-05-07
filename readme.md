@@ -9,10 +9,8 @@
 <p align="center">
   <img src="/assets/animation.gif" align="center" style="border-radius: 10px" />
 </p>
-<p align="center">
-  by [William Bierhals](https://github.com/will1Zera)
-  Link para o [servidor hospedado](https://flushee.web.app/)
-</p>
+
+Link para o [servidor hospedado](https://flushee.web.app/)
 
 ## Tecnologias 👨‍💻 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
