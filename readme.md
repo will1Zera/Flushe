@@ -27,7 +27,7 @@ Flushe é uma plataforma que permite o usuário se cadastrar e logar com seu ema
 
 
 ### Objetivo
-Práticar principais recursos de HTML, CSS , Javascript e Firebase. Entre eles:
+Praticar principais recursos de HTML, CSS , Javascript e Firebase. Entre eles:
 
 - Responsividade
 - Animações
